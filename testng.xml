@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+
+<suite name="TestListener">
 
 <listeners>
 <listener class-name = "TestBase.ExtentReportListener" />
+<!--  <listener class-name = "TestBase.ITestExtent" /> -->
 </listeners>
 
-  <test thread-count="5" name="Test">
-  
-  <classes>
-  <class name = "com.serenity.test.Runner.TestRunner" />
-  </classes>
+ <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.serenity.test.Runner.TestRunner"/>
+    </classes>
+ </test> <!-- Test -->
  
-  
-  </test> <!-- Test -->
 </suite> <!-- Suite -->

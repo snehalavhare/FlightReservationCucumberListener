@@ -15,14 +15,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.stereotype.Component;
 
 import TestBase.TestBase;
-import org.junit.Assert;
+import org.testng.Assert;
 
 @Component
 public class ReviewDetailsPage extends TestBase
 {
 	
 	WebDriver driver;
-
 	
 	@FindBy(xpath = ".//span[text()='1']")
 	WebElement ItineraryDetails;
@@ -266,11 +265,11 @@ public class ReviewDetailsPage extends TestBase
 						WebDriverWait wait = new WebDriverWait(driver, 10);
 						WebElement seat = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(".//table[@id='flightSeatMap']/tbody/tr/td["+ i +"]/a["+ j +"]"))));
 						javaScriptExecutor.executeScript("arguments[0].click();",seat);
-						count=1;
+					count=1;
 						if((seat.getCssValue("color").equals("rgba(51, 51, 51, 1)")))
-								{
-								break;
-								}
+						{
+							break;
+						}
 						
 						
 					}catch(Exception e)

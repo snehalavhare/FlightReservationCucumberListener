@@ -3,11 +3,11 @@ package TestBase;
 import java.io.File;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.HashMap;
+
 import java.util.List;
 import java.util.Map;
 
-import javax.naming.Context;
+
 
 import org.testng.IReporter;
 import org.testng.IResultMap;
@@ -25,9 +25,9 @@ public class ExtentReportListener implements IReporter{
 	
 	private ExtentReports extent;
 
-	public void generateReport(List<XmlSuite> xmlsuites, List<ISuite> isuites, String OutputDirectory)
+	public void generateReport(List<XmlSuite> xmlsuites, List<ISuite> isuites, String outputDirectory)
 	{
-		extent = new ExtentReports(OutputDirectory + File.separator + "extent.html", true);
+		extent = new ExtentReports(outputDirectory + File.separator + "extentReportListener.html", true);
 		
 		for (ISuite suite : isuites)
 		{

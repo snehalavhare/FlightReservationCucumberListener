@@ -6,7 +6,7 @@
       <class name="com.serenity.test.Runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario"/>
+          <include name="feature" invocation-numbers="0"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.serenity.test.Runner.TestRunner -->

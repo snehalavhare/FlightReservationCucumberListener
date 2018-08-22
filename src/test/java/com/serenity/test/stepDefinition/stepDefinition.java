@@ -3,7 +3,7 @@ package com.serenity.test.stepDefinition;
 import java.io.IOException;
 import java.util.HashMap;
 
-import org.junit.Assert;
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 
 import com.serenity.test.pages.HomePage;
@@ -22,10 +22,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 
-
 public class stepDefinition extends TestBase
 {
-	
 	HomePage homePage;
 	SearchResultsPage Listpage; 
 	ReviewDetailsPage reviewDetailsPage;

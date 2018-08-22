@@ -36,7 +36,7 @@ public class SearchResultsPage extends TestBase
 	{
 	
 		Thread.sleep(5000);
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 		
         for(int i=1;i<flightList.size();i++) 
         {

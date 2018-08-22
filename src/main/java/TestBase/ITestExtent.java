@@ -24,8 +24,8 @@ public class ITestExtent extends TestBase implements ITestListener
 		 public void onStart(ITestContext context)
 		 {
 			  System.out.println("on start");
-			  reports = new ExtentReports(new SimpleDateFormat("yyyy-MM-dd hh-mm-ss-ms").format(new Date()) + "reports.html");
-			  reports = new ExtentReports(System.getProperty("user.dir")+ "reports.html");
+			  reports = new ExtentReports(new SimpleDateFormat("yyyy-MM-dd hh-mm-ss-ms").format(new Date()) + "ITestListenerExtentReports.html");
+			  reports = new ExtentReports(System.getProperty("user.dir") + "ITestListenerExtentReports.html");
 		}
 		 
 		 public void onTestStart(ITestResult result) 
