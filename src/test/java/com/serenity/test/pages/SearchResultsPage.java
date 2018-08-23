@@ -35,7 +35,7 @@ public class SearchResultsPage extends TestBase
 	public void bookFlight(String value) throws InterruptedException
 	{
 	
-		Thread.sleep(5000);
+		Thread.sleep(15000);
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		
         for(int i=1;i<flightList.size();i++) 

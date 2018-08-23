@@ -5,14 +5,10 @@ import java.util.HashMap;
 
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
-
 import com.serenity.test.pages.HomePage;
 import com.serenity.test.pages.LoginPage;
 import com.serenity.test.pages.ReviewDetailsPage;
 import com.serenity.test.pages.SearchResultsPage;
-
-import TestBase.ExtentReportListener;
-import TestBase.ITestExtent;
 import TestBase.TestBase;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;

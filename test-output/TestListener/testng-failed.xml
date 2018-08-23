@@ -9,6 +9,7 @@
       <class name="com.serenity.test.Runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
+          <include name="wrieExtentReport"/>
           <include name="feature" invocation-numbers="1"/>
           <include name="tearDownClass"/>
         </methods>

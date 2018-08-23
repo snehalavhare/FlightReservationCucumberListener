@@ -46,16 +46,20 @@
 		<dependencies>
 			<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-core -->
 			
-			
 	
-					
+		<!-- For Listener provided by Cucumber -->		
 		<dependency>
-	    <groupId>org.springframework.boot</groupId>
-	    <artifactId>spring-boot</artifactId>
-	        <version>2.0.4.RELEASE</version>
-	     </dependency>
-	    
-
+		<groupId>com.vimalselvam</groupId>
+		<artifactId>cucumber-extentsreport</artifactId>
+		<version>3.0.2</version>
+		</dependency>
+		
+		<dependency>
+		<groupId>com.aventstack</groupId>
+		<artifactId>extentreports</artifactId>
+		<version>3.1.2</version>
+		</dependency>
+		
 				
 			<dependency>	
 				<groupId>org.seleniumhq.selenium</groupId>
@@ -77,13 +81,16 @@
 				<artifactId>cucumber-jvm-deps</artifactId>
 				<version>1.0.5</version>
 				<scope>provided</scope>
-			</dependency>
-			<!-- <dependency>
-				<groupId>info.cukes</groupId>
-				<artifactId>cucumber-junit</artifactId>
-				<version>1.2.5</version>
-				<scope>test</scope>
-			</dependency> -->
+			</dependency>	
+									
+			<dependency>
+			    <groupId>org.springframework.boot</groupId>
+			    <artifactId>spring-boot</artifactId>
+			    <version>2.0.4.RELEASE</version>
+		     </dependency>
+		     
+
+			
 			<dependency>
 	            <groupId>org.springframework</groupId>
 	            <artifactId>spring-core</artifactId>
@@ -96,51 +103,39 @@
 	            <version>${spring.version}</version>
 	         </dependency> 
 			
-	
-	    <!--   <dependency>
+	  <!-- <dependency>
 	          <groupId>junit</groupId>
 	          <artifactId>junit</artifactId>
 	          <version>4.12</version>
 	          <scope>test</scope>
 	      </dependency> -->
 	      
-	            <dependency>
+	       <dependency>
 	          <groupId>org.slf4j</groupId>
 	          <artifactId>slf4j-simple</artifactId>
 	          <version>1.7.7</version>
 	      </dependency>
 	      
 	      	<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
-		<dependency>
-		   <groupId>org.apache.poi</groupId>
-		   <artifactId>poi-ooxml</artifactId>
-		   <version>3.11</version>
-		</dependency>
-			
-			
-	          <dependency>
-	<groupId>com.vimalselvam</groupId>
-	<artifactId>cucumber-extentsreport</artifactId>
-	<version>3.0.2</version>
-	</dependency>
-	
-	<dependency>
-	<groupId>com.aventstack</groupId>
-	<artifactId>extentreports</artifactId>
-	<version>3.1.2</version>
-	</dependency>
-	
+			<dependency>
+			   <groupId>org.apache.poi</groupId>
+			   <artifactId>poi-ooxml</artifactId>
+			   <version>3.11</version>
+			</dependency>
+				
+		
+
 
 	      
 	      <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-	<dependency>
-	    <groupId>commons-io</groupId>
-	    <artifactId>commons-io</artifactId>
-	    <version>2.6</version>
-	</dependency>
+			<dependency>
+			    <groupId>commons-io</groupId>
+			    <artifactId>commons-io</artifactId>
+			    <version>2.6</version>
+			</dependency>
 	      
 	
-
+<!-- For Listener by implementing IReporter Interface -->	
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-testng</artifactId>

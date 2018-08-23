@@ -1,12 +1,12 @@
 package com.serenity.test.Runner;
 
 import java.io.File;
+
+import org.testng.annotations.AfterClass;
 /*
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;*/
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
-import TestBase.ITestExtent;
+import com.cucumber.listener.Reporter;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
@@ -23,6 +23,15 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 public class TestRunner extends AbstractTestNGCucumberTests
 {
+	
+	@AfterClass
+	public static void wrieExtentReport()
+	{
+		Reporter.loadXMLConfig(new File("C:\\EclipseWorkspace\\FlightReservationCucumberListener\\ExtentConfig.xml"));
+		Reporter.setSystemInfo("User", System.getProperty("user.name"));
+        Reporter.setSystemInfo("OS", "Windows");
+        Reporter.setTestRunnerOutput("Sample test runner output message");
+	}
 		
 }
 
